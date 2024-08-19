@@ -15,8 +15,6 @@
     in pkgs.mkShell {
       packages = with pkgs; [
         gtk4
-        libadwaita
-        gnome.adwaita-icon-theme
         pkg-config
         xmake
         clang-tools
