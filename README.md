@@ -15,4 +15,13 @@
 
 ---
 
-在 Part-1/
+## 创建析构函数
+
+在 Part-1/demo-widget.c 中的头部声明：
+
+```c
+static void demo_widget_dispose(GObject* object);
+static void demo_widget_finalize(GObject* object);
+```
+
+随后在底部实现两个函数。
