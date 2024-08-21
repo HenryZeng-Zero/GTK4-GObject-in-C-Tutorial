@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "demowidget.h"
+#include "demo-widget.h"
 
 static void
 activate(GtkApplication *app, gpointer user_data){
