@@ -13,7 +13,7 @@ activate(GtkApplication *app, gpointer user_data){
 
     gtk_window_set_title(GTK_WINDOW(window), "window-example-1");
     gtk_window_set_default_size(GTK_WINDOW(window), 720, 480);
-    gtk_window_set_child(GTK_WINDOW(app), demo);
+    gtk_window_set_child(GTK_WINDOW(window), demo);
     gtk_widget_set_visible(GTK_WIDGET(window), TRUE);
 }
 
