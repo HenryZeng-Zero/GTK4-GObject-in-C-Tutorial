@@ -1,4 +1,4 @@
-#include "demowidget.h"
+#include "demo-widget.h"
 
 static void demo_widget_dispose(GObject* object);
 static void demo_widget_finalize(GObject* object);
