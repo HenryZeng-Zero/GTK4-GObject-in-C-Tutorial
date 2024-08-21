@@ -3,10 +3,10 @@ add_rules("plugin.compile_commands.autoupdate", {outputdir = ".vscode"})
 
 add_requires("gtk4")
 
-target("Part-1")
+target("Part-2")
     set_kind("binary")
     set_languages("c11")
     set_optimize("fastest")
     add_packages("gtk4")
-    add_includedirs("Part-1")
-    add_files("Part-1/**.c")
+    add_includedirs("Part-2")
+    add_files("Part-2/**.c")
