@@ -1,6 +1,7 @@
 #include "demowidget.h"
 
 static void demo_widget_dispose(GObject* object);
+static void demo_widget_finalize(GObject* object);
 
 struct _DemoWidget {
     GtkWidget parent_instance;
