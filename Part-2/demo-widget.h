@@ -14,4 +14,10 @@ G_DECLARE_FINAL_TYPE(DemoWidget, demo_widget, DEMO, WIDGET, GtkWidget)
 GtkWidget *
 demo_widget_new(void);
 
+void
+demo_widget_set_label(DemoWidget *self, const gchar *label);
+
+const gchar *
+demo_widget_get_label(DemoWidget *self);
+
 G_END_DECLS // 在 C++ 编译器下会被替换成 }

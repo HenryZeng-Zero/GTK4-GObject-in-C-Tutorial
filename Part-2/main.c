@@ -2,7 +2,8 @@
 #include "demo-widget.h"
 
 static void
-activate(GtkApplication *app, gpointer user_data){
+activate(GtkApplication *app, gpointer user_data)
+{
     GtkWidget *window;
     GtkWidget *demo;
 
@@ -11,14 +12,17 @@ activate(GtkApplication *app, gpointer user_data){
     window = gtk_application_window_new(app);
     demo = demo_widget_new();
 
-    gtk_window_set_title(GTK_WINDOW(window), "window-example-1");
+    g_object_set(demo, "label", "Change property", NULL);
+
+    gtk_window_set_title(GTK_WINDOW(window), "window-example-2");
     gtk_window_set_default_size(GTK_WINDOW(window), 720, 480);
     gtk_window_set_child(GTK_WINDOW(window), demo);
     gtk_widget_set_visible(GTK_WIDGET(window), TRUE);
 }
 
 int
-main(int argc, char *argv[]){
+main(int argc, char *argv[])
+{
     GtkApplication *app;
     int status;
 
